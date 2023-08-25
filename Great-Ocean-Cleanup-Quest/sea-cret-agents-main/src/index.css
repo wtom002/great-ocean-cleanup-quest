@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+
+/* Nav Bar */
+.my-nav-font {
+    font-family: 'Patrick Hand SC', cursive, Arial, sans-serif;
+    font-size: 25px;
+}
+
+.nav-link, 
+.nav-link.active-bubble,
+.nav-link:hover
+ {
+    color: #FFFFFF !important;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    background-color: #202444;
+}
+
+.play-area {
+    background-color: darkblue;
+    width: 100%;
+    height: 100%;
+}
+
+.player {
+    outline: none;
+    position: relative;
+}
+
+.hover-bubble,
+.active-bubble {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.hover-bubble::after,
+.active-bubble::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../public/imgs/bubble.png') no-repeat center center / contain;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: opacity 0.2s ease;
+}
+
+.active-bubble::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../public/imgs/bubble.png') no-repeat center center / contain;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .nav-link:hover .hover-bubble::after,
+.nav-link.active-bubble .hover-bubble::after,
+.nav-link:hover .active-bubble::after,
+.nav-link.active-bubble .active-bubble::after {
+  opacity: 1;
+} */
+
+
+.hover-bubble,
+.active-bubble {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.hover-bubble::after,
+.active-bubble::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../public/imgs/bubble.png') no-repeat center center / contain;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: opacity 0.2s ease;
+}
+
+.active-bubble::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../public/imgs/bubble.png') no-repeat center center / contain;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .nav-link:hover .hover-bubble::after,
+.nav-link.active-bubble .hover-bubble::after,
+.nav-link:hover .active-bubble::after,
+.nav-link.active-bubble .active-bubble::after {
+  opacity: 1;
+} */
+
+
+.game-background-border {
+    background-color: #202444;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* .game-area {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+} */
+
+/* Footer */
+.footer {
+    background-color: #202444;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-text {
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+  }
+
+  .footer-small {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+  }
+  
+  .footer-large {
+    font-family: 'Abhaya Libre';
+    font-size: 50px;
+  }
+  
+  .footer-medium {
+    font-size: 18px;
+  }
+  
+  .footer-medium-large {
+    font-size: 20px;
+  }
+
+  hr {
+    border-top: 1px solid white;
+    width: 100%;
+  }
+  
+  .footer-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-nav li a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+
+  .footer-social-media a {
+    color: #FFFFFF;
+    margin: 0 12.5px;
+  }
